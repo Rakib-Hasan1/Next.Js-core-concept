@@ -13,12 +13,14 @@ export default function Navbar() {
                     <Link href="/">
                         <li className="border px-3 py-2">Home</li>
                     </Link>
-                    <Link href="/services">
-                        <li className="border px-3 py-2">Services</li>
+                    <Link href="/posts">
+                        <li className="border px-3 py-2">Posts</li>
                     </Link>
-                    <Link href="/about">
+
+
+                    {/* <Link href="/about">
                         <li className="border px-3 py-2">About</li>
-                    </Link>
+                    </Link> */}
 
                     {/* <li className="border px-3 py-2">About</li>
           <li className="border px-3 py-2">Contact Us</li>
