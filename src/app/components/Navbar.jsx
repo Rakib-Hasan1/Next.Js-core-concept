@@ -11,10 +11,13 @@ export default function Navbar() {
             <nav>
                 <ul className="h-18 flex justify-center items-center gap-6">
                     <Link href="/">
-                        <li className="border px-3 py-2">Home</li>
+                       <li className="transition-all duration-300 border border-gray-100 px-3 py-2 rounded-md   hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 cursor-pointer">Home</li>
                     </Link>
                     <Link href="/posts">
-                        <li className="border px-3 py-2">Posts</li>
+                        <li className="border border-gray-100 px-3 py-2 rounded-md transition-all duration-300 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 cursor-pointer">Posts</li>
+                    </Link>
+                    <Link href="/meals">
+                        <li className="border border-gray-100 px-3 py-2 rounded-md transition-all duration-300 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 cursor-pointer">meals</li>
                     </Link>
 
 

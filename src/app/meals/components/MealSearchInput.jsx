@@ -16,7 +16,7 @@ export default function MealSearchInput() {
     }, [search])
     return (
         <div>
-            <input onChange={(e) => setSearch(e.target.value)} type="text" value={search} className='border rounded-md py-2' />
+            <input onChange={(e) => setSearch(e.target.value)} type="text" value={search} className='border rounded-md py-2 px-3' />
         </div>
     )
 };
