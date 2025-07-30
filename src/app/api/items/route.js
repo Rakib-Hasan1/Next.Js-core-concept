@@ -1,4 +1,5 @@
 import { dbConnect } from "@/lib/dbConnect";
+import { revalidatePath } from "next/cache";
 
 const client = await dbConnect();
 const db = client.db("NextJs");
@@ -24,6 +25,7 @@ export async function POST(req) {
 
   const postedData = await req.json();
   const result = await collection.insertOne(postedData);
+  revalidatePath("/products");
 
   return Response.json(result);
 };
