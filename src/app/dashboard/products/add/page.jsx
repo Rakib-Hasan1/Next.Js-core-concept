@@ -1,4 +1,4 @@
-"use client"
+
 
 import ProductAddForm from "./components/ProductAddForm"
 
